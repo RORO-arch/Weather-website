@@ -21,7 +21,7 @@ app.get('', (req, res) => {
 
 app.get('/about', (req, res) => {
     res.render('about', {
-        title: 'About Me',
+        title: 'My name is Rohit Wadichor.I did my schooling in DPS Nacharam.Currently I am pursuing Btech in CMR College of Engineering and Technology.',
         name: 'Rohit Wadichor'
     })
 })
@@ -30,7 +30,7 @@ app.get('/about', (req, res) => {
 app.get('/help', (req, res) => {
     res.render('help', {
         title:'help',
-        helpText: 'This is some helpful text.',
+        helpText: 'Just type the location of the place and know the weather details.Make sure you have your internet up and running',
         name:'Rohit Wadichor'
     })
 })
