@@ -3,6 +3,7 @@ const express=require('express')
 const hbs=require('hbs')
 const forecast=require('./src/utils/forecast')
 const geocode=require('./src/utils/geocode')
+const { isAbsolute } = require('path')
 const app=express()
 const index_add=path.join(__dirname,'public')
 const views_path=path.join(__dirname,'templates/views')
@@ -21,7 +22,8 @@ app.get('', (req, res) => {
 
 app.get('/about', (req, res) => {
     res.render('about', {
-        title: 'My name is Rohit Wadichor.I did my schooling in DPS Nacharam.Currently I am pursuing Btech in CMR College of Engineering and Technology.',
+        title:'About',
+        detail: 'My name is Rohit Wadichor.I did my schooling in DPS Nacharam.Currently I am pursuing Btech in CMR College of Engineering and Technology.',
         name: 'Rohit Wadichor'
     })
 })
@@ -29,7 +31,7 @@ app.get('/about', (req, res) => {
 
 app.get('/help', (req, res) => {
     res.render('help', {
-        title:'help',
+        title:'Help',
         helpText: 'Just type the location of the place and know the weather details.Make sure you have your internet up and running',
         name:'Rohit Wadichor'
     })
