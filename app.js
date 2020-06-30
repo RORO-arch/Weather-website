@@ -23,7 +23,7 @@ app.get('', (req, res) => {
 app.get('/about', (req, res) => {
     res.render('about', {
         title:'About',
-        detail: 'My name is Rohit Wadichor.I did my schooling in DPS Nacharam.Currently I am pursuing Btech in CMR College of Engineering and Technology.',
+        detail: 'My name is Rohit Wadichor.I did my schooling in DPS Nacharam.Currently I am pursuing Btech in computer science in CMR College of Engineering and Technology.',
         name: 'Rohit Wadichor'
     })
 })
