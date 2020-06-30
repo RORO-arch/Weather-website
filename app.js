@@ -59,11 +59,7 @@ app.get('/weather',(req,res)=>
             else{
                  res.send({
                  location:data.location,
-                 temperature:foredata.temp,
-                 fl:foredata.fl,
-                 humidity:foredata.humidity,
-                 wind_speed:foredata.wind_speed,
-                 clouds:foredata.clouds
+                 forecast:foredata
             })}
             
             })}

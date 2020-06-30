@@ -10,14 +10,10 @@ const forecast=(lat,long,callback)=>{
         {callback("unable to find location",undefined)}
         
         else
-        {callback(undefined,{
-            temp:response.body.main.temp,
-            fl:response.body.main.feels_like,
-        humidity:response.body.main.humidity,
-    wind_speed:response.body.wind.speed,
-clouds:response.body.clouds.all})}
+        {callback(undefined," It is currently "+response.body.main.temp+" degrees out.Though while standing outside it will feel like its "+response.body.main.feels_like+" degrees.Humidity is "+response.body.main.humidity+" %.Wind speed is "+response.body.wind.speed+" Km/h.There is "+response.body.clouds.all+" % chance of rain today"
+           )}
         })
-
+       
 
 }
 module.exports=forecast
