@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Welcome</title>
+       <link rel="stylesheet" href="CSS/style.css">
+       <link rel="icon" href="images/weather.png">
+       
+
+    </head>
+    <body>
+        <div class="main-content">
+        {{>header}}
+        <p>Use this site to get weather details</p>
+        <form>
+            <input placeholder="Address">
+            <button>Search</button>
+        </form>
+          <br>
+        Location<p id='msg1'></p>
+        Temperature  in degrees<p id="msg2"></p>
+        Temperature according to human perception<p id="msg3"></p>
+        Humidity in percentage<p id="msg4"></p>
+        Wind speed in Km/h<p id="msg5"></p>
+        Chances of rain(max) in percentage<p id="msg6"></p>
+        </div>
+        {{>footer}}
+        <script src="/js/first.js"></script>
+    </body>
+</html>
