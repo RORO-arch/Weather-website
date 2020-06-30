@@ -7,6 +7,7 @@ const app=express()
 const index_add=path.join(__dirname,'public')
 const views_path=path.join(__dirname,'templates/views')
 const partial_path=path.join(__dirname,'templates/partial')
+const port=process.env.PORT || 3000
 app.set('view engine','hbs')
 app.set('views',views_path)
 hbs.registerPartials(partial_path)
