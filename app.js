@@ -91,7 +91,7 @@ app.get('*',(req,res)=>
         name:"Rohit Wadichor"
     })
 }) 
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log("server is up")
 })
 
